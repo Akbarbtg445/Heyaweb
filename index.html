@@ -1,106 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkTree - Heya Camp</title>
-    <link
-     rel="stylesheet" 
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="Heya.css">
-    <link rel="website icon" type="png" href="East 2023.png">
-     
-</head>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkTree - Heya Camp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Heya.css" />
+  <link rel="icon" type="image/png" href="East 2023.png" />
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0; /* Background color for the body */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
     .taskbar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333; /* Dark background color for the taskbar */
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow at the bottom */
-        z-index: 1000; /* Ensures it stays above other content */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
     }
     .taskbar-item {
-        padding: 1px 1px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+      cursor: pointer;
+      margin-bottom: 5px;
     }
     .taskbar-item:hover {
-        background-color: #555; /* Darker background color on hover */
+      background-color: #555;
+      border-radius: 5px;
+      padding: 4px;
     }
     .quick-links {
-        display: flex;
-        align-items: center;
-        height: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 5px;
     }
     .quick-link {
-        margin-left: 20px;
-        padding: 1px 1px;
-        background-color: #555;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        border-radius: 1rem;
+      background-color: #555;
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 1rem;
+      transition: background-color 0.3s;
     }
     .quick-link:hover {
-        background-color: #777;
+      background-color: #777;
     }
-    </style>
+    .logo a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .nav-links a.active {
+      color: #007bff;
+    }
+  </style>
+</head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="https://akbarbtg445.github.io/Heyaweb/">Heyacamp</a>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="https://akbarbtg445.github.io/Heyaweb/" class="active">Home</a></li>
-                <li><a href="https://akbarbtg445.github.io/Carasewa/">Cara Sewa</a></li>
-                <li><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjQ0MzExNDEyMjY3NTEy?story_media_id=3410477476047537277_55662927827&igsh=MWk1bDRvb2RrZWF0bg==">Pengumuman</a></li>
-                <li><a href="https://akbarbtg445.github.io/Alat-yang-disewakan/">Alat yang disewakan</a></li>
-                <li><a href="https://akbarbtg445.github.io/Paketsewa/">Paket sewa</a></li>
-                <li><a href="https://akbarbtg445.github.io/Hubungi-kami/">Hubungi kami</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-     
-</body>
-<body>
-    <div class="container mt-5">
-        <div class="">
-        </div> 
-        <div class="text-center mt-3">
-            <h1>Heya Camp</h1>
-            <h2>Tempat Perentalan Alat Outdoor</h2>
-        </div>
-       
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://akbarbtg445.github.io/Heyaweb/">HeyaCamp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="https://akbarbtg445.github.io/Heyaweb/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://akbarbtg445.github.io/Carasewa/">Cara Sewa</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjQ0MzExNDEyMjY3NTEy?story_media_id=3410477476047537277_55662927827&igsh=MWk1bDRvb2RrZWF0bg==">Pengumuman</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://akbarbtg445.github.io/Alat-yang-disewakan/">Alat yang disewakan</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://akbarbtg445.github.io/Paketsewa/">Paket sewa</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://akbarbtg445.github.io/Hubungi-kami/">Hubungi kami</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="taskbar">
-        <div class="taskbar-item">Settings</div>
-        <div class="copyright">
-            &copy; 2024 Perentalan Alat Outdoor Heyacamp. All rights reserved.
-        </div>
-        
-        
-    
-        <!-- Quick Links -->
-        <div class="quick-links">
-            <a href="https://www.instagram.com/heyacampp_?igsh=NndpZ2d6dXh0bzBx" class="quick-link">Instagram</a>
-            <a href="https://wa.link/o87fdz" class="quick-link">WhatsApp</a>
-            <a href="https://g.co/kgs/Pk3FV4i" class="quick-link">Google maps</a>
-        </div>
+  </nav>
+
+  <div class="container mt-5 text-center">
+    <h1>Heya Camp</h1>
+    <h2>Tempat Perentalan Alat Outdoor</h2>
+  </div>
+
+  <div class="taskbar">
+    <div class="taskbar-item">Settings</div>
+    <div class="copyright text-center w-100">
+      &copy; 2024 Perentalan Alat Outdoor Heyacamp. All rights reserved.
     </div>
+    <div class="quick-links">
+      <a href="https://www.instagram.com/heyacampp_?igsh=NndpZ2d6dXh0bzBx" class="quick-link">Instagram</a>
+      <a href="https://wa.link/o87fdz" class="quick-link">WhatsApp</a>
+      <a href="https://g.co/kgs/Pk3FV4i" class="quick-link">Google Maps</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
