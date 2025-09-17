@@ -63,25 +63,6 @@ h2 {
   margin-right: 15px;
 }
 
-.quick-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.quick-link {
-  background-color: #555;
-  color: white;
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 1rem;
-  transition: background-color 0.3s;
-}
-
-.quick-link:hover {
-  background-color: #777;
-}
 
 /* Responsive Taskbar */
 @media (max-width: 768px) {
